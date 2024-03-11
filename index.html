@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script src="main.js"></script>
+
+    <title>Airfryer Snack Foods</title>
+</head>
+<body>
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-theme="e">
+            <div data-role="navbar" data-theme="e">
+                <ul>
+                <li><a href="#show" data-transition="flip">Your Foods</a></li>
+                <li><a href="#add" data-transition="flip">Add New Food</a></li>
+                </ul>
+            </div>
+            <h2>Airfry</h2>
+        </div>
+
+        <div data-role="content" data-theme="a">
+            Keep track of your favorite airfryer foods.
+        </div>
+    </div>
+
+    <div data-role="page" id="show">
+        <div data-role="header" data-theme="e">
+            <div data-role="navbar" data-theme="e">
+                <ul>
+                <li><a href="#home" data-transition="flip">Home</a></li>
+                <li><a href="#add" data-transition="flip">Add New Food</a></li>
+                </ul>
+            </div>
+            <h2>Your Foods</h2>
+        </div>
+
+        <div data-role="content" data-theme="c">   
+            <ul id="myul" data-role="listview"></ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="add">
+        <div data-role="header" data-theme="e">
+            <div data-role="navbar" data-theme="e">
+                <ul>
+                <li><a href="#home" data-transition="flip">Home</a></li>
+                <li><a href="#show" data-transition="flip">Show Foods</a></li>
+                </ul>
+            </div>
+            <h2>Add New Food</h2>
+        </div>
+
+        <div data-role="content" data-theme="d">
+            Enter Food Name <br>
+            <input type="text" value="" id="foodName">
+            Enter Cook Time
+            <input type="text" value="" id="cookTime">
+
+            <label for="select-temp">Select a Temperature</label>
+            <select name="select-temp" id="select-temp">
+                <option value="350">350</option>
+                <option value="375">375</option>
+                <option value="400">400</option>
+            </select>
+
+            <button id="addButton">Add Food</button>
+        </div>
+    </div>
+</body>
+</html>
