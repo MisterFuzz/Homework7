@@ -42,8 +42,8 @@
             <h2>Your Foods</h2>
         </div>
 
-        <div data-role="content" data-theme="c">   
-            <ul id="myul" data-role="listview"></ul>
+        <div data-role="content" data-theme='c'>   
+            <ul data-role="listview" id="myul"></ul>
         </div>
     </div>
 
@@ -63,6 +63,8 @@
             <input type="text" value="" id="foodName">
             Enter Cook Time
             <input type="text" value="" id="cookTime">
+            Enter Food Description
+            <input type="text" value="" id="foodDesc">
 
             <label for="select-temp">Select a Temperature</label>
             <select name="select-temp" id="select-temp">
@@ -73,6 +75,27 @@
 
             <button id="addButton">Add Food</button>
         </div>
+    </div>
+
+    <div data-role="page" id="info">
+        <div data-role="header" data-theme="e">
+            <div data-role="navbar" data-theme="e">
+                <ul>
+                <li><a href="#home" data-transition="flip">Home</a></li>
+                <li><a href="#show" data-transition="flip">Show Foods</a></li>
+                <li><a href="#add" data-transition="flip">Add Foods</a></li>
+                </ul>
+            </div>
+            <h2>Food Info</h2>
+        </div>
+
+        <div data-role="content" data-theme="c">
+            <p id="Name"></p>
+            <p id="Time"></p>
+            <p id="Temp"></p>
+            <p id="Desc"></p>
+        </div>
+
     </div>
 </body>
 </html>
